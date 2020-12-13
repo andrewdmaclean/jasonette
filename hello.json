@@ -26,80 +26,11 @@
     "body": {
       "background": {
         "type": "html",
-        "url": "https://www.andrewdmaclean.com",
+        "url": "https://andrewdmaclean.com",
         "action": {
           "trigger": "visit"
         }
       }
     }
   }
-}
-                                        "padding": 30,
-                                        "size": 20
-                                    }
-                                },
-                                {
-                                    "type": "label",
-                                    "text": "{ ˃̵̑ᴥ˂̵̑}",
-                                    "style": {
-                                        "align": "center",
-                                        "font": "HelveticaNeue-Bold",
-                                        "size": 50
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "type": "label",
-                            "style": {
-                                "align": "right",
-                                "padding": 10,
-                                "color": "#000000",
-                                "font": "HelveticaNeue",
-                                "size": 20
-                            },
-                            "text": "Check out Live DEMO",
-                            "href": {
-                                "url": "https://raw.githubusercontent.com/jasonelle/docs/develop/examples/jasonette/apps/jasonpedia/demo.json",
-                                "fresh": true
-                            }
-                        },
-                        {
-                            "type": "label",
-                            "style": {
-                                "align": "right",
-                                "padding": 10,
-                                "color": "#000000",
-                                "font": "HelveticaNeue",
-                                "size": 20
-                            },
-                            "text": "Watch the tutorial video",
-                            "href": {
-                                "url": "https://www.youtube.com/watch?v=hfevBAAfCMQ",
-                                "view": "web"
-                            }
-                        },
-                        {
-                            "type": "label",
-                            "style": {
-                                "align": "right",
-                                "padding": 10,
-                                "color": "#000000",
-                                "font": "HelveticaNeue",
-                                "size": 20
-                            },
-                            "text": "View documentation",
-                            "href": {
-                                "url": "https://jasonelle.com/docs",
-                                "view": "web",
-                                "options": {
-                                    "reader": true
-                                }
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    }
 }
