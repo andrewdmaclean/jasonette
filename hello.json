@@ -1,49 +1,39 @@
 {
-    "$jason": {
-        "head": {
-            "title": "{ ˃̵̑ᴥ˂̵̑}",
-            "actions": {
-                "$foreground": {
-                    "type": "$reload"
+  "$jason": {
+    "head": {
+      "title": "Jasonbase",
+      "actions": {
+        "visit": [
+          {
+            "{{#if /\\/edit/.test($jason.url)}}": {
+              "type": "$href",
+              "options": {
+                "url": "{{$jason.url.replace('/edit', '')}}",
+                "preload": {
+                  "background": "#ffffff"
                 }
+              }
             }
-        },
-        "body": {
-            "header": {
-                "style": {
-                    "theme": true
-                }
-            },
-            "style": {
-                "background": "#ffffff",
-                "border": "none"
-            },
-            "sections": [
-                {
-                    "items": [
-                        {
-                            "type": "vertical",
-                            "style": {
-                                "padding": 30,
-                                "spacing": 20,
-                                "align": "center"
-                            },
-                            "components": [
-                                {
-                                    "type": "label",
-                                    "text": "It's ALIVE!",
-                                    "style": {
-                                        "align": "center",
-                                        "font": "Courier-Bold",
-                                        "size": 26
-                                    }
-                                },
-                                {
-                                    "type": "label",
-                                    "text": "This is a demo app. You can make your own app by changing the url inside strings.xml",
-                                    "style": {
-                                        "align": "center",
-                                        "font": "Courier",
+          },
+          {
+            "{{#else}}": {
+              "type": "$default"
+            }
+          }
+        ]
+      }
+    },
+    "body": {
+      "background": {
+        "type": "html",
+        "url": "https://www.andrewdmaclean.com",
+        "action": {
+          "trigger": "visit"
+        }
+      }
+    }
+  }
+}
                                         "padding": 30,
                                         "size": 20
                                     }
