@@ -26,7 +26,7 @@
     "body": {
       "background": {
         "type": "html",
-        "url": "https://andrewdmaclean.com",
+        "url": "https://hightechu.ca",
         "action": {
           "trigger": "visit"
         }
